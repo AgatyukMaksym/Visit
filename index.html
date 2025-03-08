@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>А. Максим - Веб Розробник</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f77600b8df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header_left">
+            <h1>А. Максим</h1>
+            <div class="bio">
+                <p>Привіт! Я А. Максим, студент Logika. Маю досвід роботи в HTML, CSS, JavaScript та інших технологіях. Моїм основним захопленням є розробка веб-сайтів та програмування на JavaScript. Я завжди шукаю нові можливості для розвитку та вдосконалення своїх навичок.</p>
+            </div>
+        </div>
+        <div class="header_right">
+            <a href="#next-section" class="header_btn">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="skills" id="next-section">
+            <h1>Навички</h1>
+            <div class="section_row">
+                <div class="section_item">
+                    <img src="html_logo.png" alt="HTML">
+                </div>
+                <div class="section_item">
+                    <img src="css_logo.png" alt="CSS">
+                </div>
+                <div class="section_item">
+                    <img src="js_logo.png" alt="JavaScript">
+                </div>
+            </div>
+        </section>
+        
+        <section class="projects">
+            <h1>Проєкти</h1>
+            <div class="section_row">
+                <div class="section_item github">
+                    <a href="https://github.com/AgatyukMaksym" target="_blank">
+                        <img src="github_logo.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contacts">
+            <h1>Контакти</h1>
+            <div class="section_row">
+                <div class="section_item">
+
+                </div>
+                <div class="section_item">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqupQywciVcacLZL-AM_K_gWWIo2o8AiKVkg&s" target="_blank">
+                        <img src="tg_logo.svg" alt="Telegram">
+                    </a>
+                </div>
+                <div class="section_item">
+                    <a href="https://static.espreso.tv/uploads/photobank/236000_237000/236026_newgmaillogo.0_new_960x380_0.webp">
+                        <img src="email_logo.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_content">
+            Створено мною в 2024 | Logika
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.header_btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            const nextSection = document.querySelector('#next-section');
+            window.scrollTo({
+                top: nextSection.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
